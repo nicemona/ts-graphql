@@ -1,12 +1,15 @@
 type User {
+  id: String
   name: String
   email: String
+  password: String
   projects: [Project]
 }
 
 type Project {
+  id: Int
   title: String
-  active: Boolean
+  status: String
   members: [User]
 }
 type Query {

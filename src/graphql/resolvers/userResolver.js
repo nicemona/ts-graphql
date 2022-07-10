@@ -1,6 +1,7 @@
-import { users } from '../../../database/mockdb';
+import { getUsers } from '../../utils';
+
 export const userResolver = {
   Query: {
-    users: () => users,
+    users: () => getUsers(),
   },
 };
