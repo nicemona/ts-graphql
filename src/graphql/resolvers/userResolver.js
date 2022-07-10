@@ -2,6 +2,6 @@ import { getUsers } from '../../utils';
 
 export const userResolver = {
   Query: {
-    users: () => getUsers(),
+    users: async () => getUsers(),
   },
 };
